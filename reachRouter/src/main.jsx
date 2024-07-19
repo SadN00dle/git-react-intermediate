@@ -8,6 +8,7 @@ import About from './components/about/About'
 import Contact from './components/contact/Contact'
 import User from './components/user/User'
 import Github, {githubInfoLoader} from './components/github/Github'
+import Test from './components/test/Test'
 
 
 
@@ -16,7 +17,7 @@ const router = createBrowserRouter(
     <Route path='/' element={<Layout/>}>
         <Route path='' element={<Home />} />
         <Route path='about' element={<About />} />
-        <Route path='contact' element={<Contact />} />
+        <Route path='contact' element={<Contact />}/>                                
         <Route path='user/:userid' element={<User />} />
 
         <Route 
