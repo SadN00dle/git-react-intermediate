@@ -6,7 +6,7 @@ function Profile() {
     
     if (!user) return <div className='text-white font-bold'>Please login</div>
 
-    return <div>Welcome {user.username}</div>
+    return <div className='text-white font-bold'>Welcome {user.username}</div>
 }
 
 export default Profile

@@ -10,7 +10,7 @@ function Login() {
  
     const handleSubmit = (e)=>{
         e.preventDefault()
-        setUser(username, password)
+        setUser({username, password})
     }
     
   return (
@@ -18,12 +18,15 @@ function Login() {
         <h2 className='text-white font-bold mb-5 '> Login </h2>
 
         <input 
+        type="text" 
+
         className='text-black mb-5 w-1/5 h-7 '
+
         value={username}
         onChange={(e)=>{
             setUsername(e.target.value)
         }}
-        type="text" 
+        
         placeholder='username' />
 
         <input 
