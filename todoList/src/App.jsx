@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import { TodoProvider } from './contexts'
 
 function App() {
+
   const [todos, setTodos] = useState([])
 
   const addTodo = (todo)=>{
