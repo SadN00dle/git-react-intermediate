@@ -11,7 +11,7 @@ export const TodoContext = createContext({
     addTodo: ()=>{},
     updateTodo: (id, todo) =>{},
     deleteTodo:(id)=>{},
-    toggleComplete: ()=>{id}
+    toggleComplete: (id)=>{}
 })
 
 export const useTodo = ()=>{
